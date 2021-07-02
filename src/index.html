@@ -2,7 +2,7 @@
 <html class="antialiased">
   <head lang="en">
     <meta charset="utf-8" />
-    <title>BIP39 - Mnemonic Code</title>
+    <title>BIP39 - Recovery Phrase</title>
     <meta
       content="Mnemonic code for generating deterministic keys"
       name="description"
@@ -20,7 +20,7 @@
   </head>
   <body>
     <!-- Container -->
-    <div class="py-32 mx-auto max-w-7xl">
+    <div class="py-16 mx-auto max-w-7xl">
       <!-- Title -->
       <div class="flex items-baseline justify-between pb-8 mb-8 border-b border-gray-200">
           <h1 class="text-5xl font-bold">Recovery Phrase Converter</h1>
@@ -34,27 +34,33 @@
       <div class="grid grid-cols-12 gap-4">
         <!-- Navigation -->
         <div class="sticky self-start col-span-4 top-8">
-          <nav class="max-w-[240px] mr-8 space-y-1 text-gray-600" aria-label="Sidebar">
+          <nav class="max-w-[240px] mr-8 space-y-2 text-gray-600" aria-label="Sidebar">
             <!-- Current: "bg-gray-100 text-gray-900", Default: "text-gray-600 hover:bg-gray-50 hover:text-gray-900" -->
             <a href="#section-1" class="flex items-center px-3 py-2 text-sm font-medium rounded-md js-anchor-link hover:bg-gray-50 hover:text-gray-900">
+              <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 mr-3 text-gray-400">
+                <g transform="matrix(1,0,0,1,0,0)"><path d="M23.5,0h-1a.5.5,0,0,0-.431.247l-4.16,7.072a.5.5,0,0,0,.077.607l3.921,3.921a.5.5,0,0,0,.666.036l1.239-.992A.5.5,0,0,0,24,10.5V.5A.5.5,0,0,0,23.5,0Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M16.868,8.929a.5.5,0,0,0-.491-.127l-2.9.827a2.484,2.484,0,0,0-1.717,1.717L9.488,19.312a.069.069,0,0,0,.116.068l5.63-5.631A.75.75,0,1,1,16.3,14.81l-5.632,5.632a.062.062,0,0,0-.01.077.064.064,0,0,0,.072.028l7.965-2.276a2.488,2.488,0,0,0,1.72-1.726l.778-2.945a.5.5,0,0,0-.13-.481Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M8.3,21.283A3.464,3.464,0,0,1,6,22a3.175,3.175,0,0,1-2.644-1.045c-.636-.965-.441-2.714.564-5.059,2.017-4.709,4.134-8.436,2.8-11.62C5.969,2.5,4.264,1.156,1.351.065a1,1,0,1,0-.7,1.871C2.978,2.81,4.36,3.828,4.872,5.05c.955,2.277-.9,5.646-2.791,10.059-1.3,3.036-1.434,5.373-.4,6.947A5.057,5.057,0,0,0,6,24,5.3,5.3,0,0,0,9.7,22.707a.991.991,0,0,0,.006-1.395A1.009,1.009,0,0,0,8.3,21.283Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path></g>
+              </svg>
               <span class="truncate">
                 Recovery Phrase
               </span>
             </a>
 
             <a href="#section-2" class="flex items-center px-3 py-2 text-sm font-medium rounded-md js-anchor-link hover:bg-gray-50 hover:text-gray-900">
+              <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 mr-3 text-gray-400"><g transform="matrix(1,0,0,1,0,0)"><path d="M10.5,23.02a.98.98,0,0,0-.98-.979H7.562a.98.98,0,1,0,0,1.959H9.521A.98.98,0,0,0,10.5,23.02Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M4.294,21.4a4.434,4.434,0,0,1-1.625-1.736.98.98,0,1,0-1.738.906,6.4,6.4,0,0,0,2.343,2.5.968.968,0,0,0,.509.143A.979.979,0,0,0,4.294,21.4Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M2.115,13.1A6.361,6.361,0,0,0,.408,16.072a.979.979,0,0,0,.711,1.189.945.945,0,0,0,.24.03.98.98,0,0,0,.949-.74A4.4,4.4,0,0,1,3.49,14.492a.98.98,0,1,0-1.375-1.4Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M17.358,13.224a.98.98,0,0,0,0-1.959h-1.47a.98.98,0,0,0,0,1.959Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M22.5,8.74a.979.979,0,0,0-1.342.347,4.383,4.383,0,0,1-1.171,1.307.98.98,0,1,0,1.173,1.57,6.387,6.387,0,0,0,1.688-1.883A.981.981,0,0,0,22.5,8.74Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M23.622,5.807a1.075,1.075,0,0,0-.018-.193,6.362,6.362,0,0,0-1.554-3.06.98.98,0,1,0-1.444,1.324,4.393,4.393,0,0,1,1.075,2.116.981.981,0,0,0,.96.79.9.9,0,0,0,.191-.019A.979.979,0,0,0,23.622,5.807Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M18.823,1.578A.978.978,0,0,0,17.935.516C17.744.5,17.553.49,17.358.49h-.98a.98.98,0,0,0,0,1.959h.98c.136,0,.27.007.4.018.03,0,.06,0,.088,0A.979.979,0,0,0,18.823,1.578Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M8.579,9a.487.487,0,0,0,.452.3h1.225a.245.245,0,0,1,.245.245v9.8a1.469,1.469,0,0,0,2.938,0v-9.8a.245.245,0,0,1,.245-.245h1.225a.49.49,0,0,0,.346-.836L12.316,5.531a.489.489,0,0,0-.692,0L8.685,8.47A.49.49,0,0,0,8.579,9Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M10.011 1.959 A1.959 1.959 0 1 0 13.929 1.959 A1.959 1.959 0 1 0 10.011 1.959 Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M6.582,11.265a.98.98,0,0,0,0,1.959h1.47a.98.98,0,0,0,0-1.959Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path></g></svg>
               <span class="truncate">
                 Derivation Path
               </span>
             </a>
 
             <a href="#section-3" class="flex items-center px-3 py-2 text-sm font-medium rounded-md js-anchor-link hover:bg-gray-50 hover:text-gray-900">
+              <svg viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-5 h-5 mr-3 text-gray-400"><g transform="matrix(1,0,0,1,0,0)"><path d="M21,0H3A3,3,0,0,0,0,3V18a3,3,0,0,0,3,3H9.5a1,1,0,0,0,0-2H3a1,1,0,0,1-1-1V7.5A.5.5,0,0,1,2.5,7h19a.5.5,0,0,1,.5.5V9a1,1,0,0,0,2,0V3A3,3,0,0,0,21,0ZM11,3.5a1,1,0,1,1-1-1A1,1,0,0,1,11,3.5Zm-3,0a1,1,0,1,1-1-1A1,1,0,0,1,8,3.5Zm-3,0a1,1,0,1,1-1-1A1,1,0,0,1,5,3.5Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M11.942,9.913a1,1,0,0,0-1.414.03L7.118,13.5a.25.25,0,0,1-.181.077.246.246,0,0,1-.18-.077l-.535-.558a1,1,0,0,0-1.444,1.384l1.438,1.5a1,1,0,0,0,1.443,0l4.313-4.5A1,1,0,0,0,11.942,9.913Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M17.382,16.118a.25.25,0,0,1-.25.063A3.853,3.853,0,0,0,16,16a4,4,0,1,0,4,4,3.841,3.841,0,0,0-.181-1.131.249.249,0,0,1,.063-.25l4.045-4.046A.248.248,0,0,0,24,14.4V12.25a.25.25,0,0,0-.25-.25H21.6a.249.249,0,0,0-.177.073ZM16,21.5A1.5,1.5,0,1,1,17.5,20,1.5,1.5,0,0,1,16,21.5Z" stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path></g></svg>
               <span class="truncate">
                 Derived Addresses
               </span>
             </a>
 
             <a href="#section-4" class="flex items-center px-3 py-2 text-sm font-medium rounded-md js-anchor-link hover:bg-gray-50 hover:text-gray-900">
+              <svg viewBox="0 0 24 24" height="24" width="24" fill="currentColor" class="w-5 h-5 mr-3 text-gray-400" xmlns="http://www.w3.org/2000/svg"><g transform="matrix(1,0,0,1,0,0)"><path d="M24,3.517a2.018,2.018,0,0,0-.609-1.441,1.915,1.915,0,0,0-1.438-.56c-.29.008-.58.021-.87.037A.554.554,0,0,1,20.5,1a.5.5,0,0,0-.547-.5,25.167,25.167,0,0,0-4.081.7.5.5,0,0,0-.372.484V8a.5.5,0,0,0,.854.354l1.292-1.293a.5.5,0,0,1,.708,0l1.293,1.293A.5.5,0,0,0,20.5,8V4.065a.5.5,0,0,1,.467-.5c.168-.011.337-.02.51-.029a.5.5,0,0,1,.525.5l-.013,13.5a.5.5,0,0,1-.479.5A22.909,22.909,0,0,0,13.7,19.543a.5.5,0,0,1-.7-.458V6c0-.19.256-.46.753-.752A.5.5,0,0,0,14,4.816V3.688a.5.5,0,0,0-.722-.448,6.686,6.686,0,0,0-.982.585.5.5,0,0,1-.592,0C9.755,2.383,5.889,1.63,2.047,1.516a1.927,1.927,0,0,0-1.438.56A2.018,2.018,0,0,0,0,3.517v14.5a2,2,0,0,0,1.956,2C7.923,20.186,11,21.834,11,22.5a1,1,0,0,0,2,0c0-.666,3.077-2.314,9.044-2.486a2,2,0,0,0,1.956-2ZM2.478,18.033a.5.5,0,0,1-.478-.5l-.012-13.5a.5.5,0,0,1,.523-.5C8.113,3.789,11,5.357,11,6V19.086a.5.5,0,0,1-.7.457A22.937,22.937,0,0,0,2.478,18.033Z"  stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M9.257,7.443a24.06,24.06,0,0,0-5.184-1.02.75.75,0,1,0-.146,1.493,22.661,22.661,0,0,1,4.853.949.75.75,0,1,0,.477-1.422Z"  stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M9.257,11.616A24.036,24.036,0,0,0,4.073,10.6a.75.75,0,1,0-.146,1.493,22.635,22.635,0,0,1,4.853.949.75.75,0,0,0,.477-1.422Z"  stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M9.257,15.789a24.06,24.06,0,0,0-5.184-1.02.75.75,0,1,0-.146,1.493,22.538,22.538,0,0,1,4.853.949.75.75,0,0,0,.477-1.422Z"  stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M15.22,13.038a22.635,22.635,0,0,1,4.853-.949.75.75,0,1,0-.146-1.493,24.036,24.036,0,0,0-5.184,1.02.75.75,0,0,0,.477,1.422Z"  stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path><path d="M15.22,17.211a22.538,22.538,0,0,1,4.853-.949.75.75,0,1,0-.146-1.493,24.06,24.06,0,0,0-5.184,1.02.75.75,0,0,0,.477,1.422Z"  stroke="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"></path></g></svg>
               <span class="truncate">
                 More info
               </span>
@@ -71,7 +77,7 @@
               <div>
                 <h2 class="ok-card__header-title">Recovery Phrase</h2>
                 <p class="max-w-2xl mt-1 text-sm text-gray-500">
-                  You can enter an existing BIP39 mnemonic, or generate a new random one.
+                  You can enter an existing BIP39 recovery phrase, or generate a new random one.
                 </p>
               </div>
               <!-- Card / Header / Controls -->              
@@ -93,7 +99,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                     </svg>
-                    <span>Entropy is an advanced feature. Your mnemonic may be insecure if this feature is used incorrectly. <a class="underline" href="#entropy-notes">Read more</a></span>
+                    <span>Entropy is an advanced feature. Your recovery phrase may be insecure if this feature is used incorrectly. <a class="underline" href="#entropy-notes">Read more</a></span>
                   </p>
                   <!-- Valid entropy values -->
                   <div>
@@ -240,7 +246,7 @@
                       </div>
                     </div>
                     <div>
-                      <p class="mb-1 ok-label">Mnemonic Length</p>
+                      <p class="mb-1 ok-label">Recovery Phrase Length</p>
                       <select class="mnemonic-length ok-select">
                         <option value="raw" selected>
                           Use Raw Entropy (3 words per 32 bits)
@@ -253,7 +259,7 @@
                       </select>
                       <p class="hidden weak-entropy-override-warning">
                         <span class="ok-helper-text ok-helper-text--danger">
-                          The mnemonic will appear more secure than it really is.
+                          The recovery phrase will appear more secure than it really is.
                         </span>
                       </p>
                     </div>
@@ -301,7 +307,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
                     </svg>
-                    Mnemonics with less than 12 words have low entropy and may be guessed by an attacker.
+                    Recovery phrase with less than 12 words have low entropy and may be guessed by an attacker.
                   </p>
                 </div>
                 <!-- Recovery Code -->
@@ -339,7 +345,7 @@
               <div class="hidden splitMnemonic">
                 <div class="p-6 border border-gray-200 rounded-lg bg-gray-50">
                   <label for="phrase" class="mb-1 ok-label"
-                    >BIP39 Split Mnemonic</label
+                    >BIP39 Split Recovery Phrase</label
                   >
                   <div>
                     <textarea
@@ -428,7 +434,7 @@
                     </div>
                     <!-- BIP85 Mnemonic Language -->
                     <div class="bip85-mnemonic-language-input">
-                      <label for="bip85-mnemonic-language" class="mb-1 ok-label">BIP85 Mnemonic Language</label>
+                      <label for="bip85-mnemonic-language" class="mb-1 ok-label">BIP85 Recovery Phrase Language</label>
                       <div class="col-sm-10 languages">
                         <select
                           id="bip85-mnemonic-language"
@@ -449,7 +455,7 @@
                     </div>
                     <!-- BIP85 Mnemonic Length -->
                     <div class="bip85-mnemonic-length-input">
-                      <label for="bip85-mnemonic-length" class="mb-1 ok-label">BIP85 Mnemonic Length</label>
+                      <label for="bip85-mnemonic-length" class="mb-1 ok-label">BIP85 Recovery Phrase Length</label>
                       <select id="bip85-mnemonic-length" class="w-full strength ok-select">
                         <option value="12" selected>12</option>
                         <option value="18">18</option>
@@ -487,7 +493,7 @@
                         rows="3"
                       ></textarea>
                       <p class="ok-helper-text">
-                        The value of the this field is not used elsewhere on this page. It can be used as a new key. In case of the BIP39 application, you can paste it into the "BIP39 Mnemonic" field to use it as a new mnemonic.
+                        The value of the this field is not used elsewhere on this page. It can be used as a new key. In case of the BIP39 application, you can paste it into the "BIP39 Recovery Phrase" field to use it as a new recovery phrase.
                       </p>
                     </div>
                   </div>
@@ -960,7 +966,7 @@
                         </div>
                       </div>
                       <div class="form-group">
-                        <label for="coin-bip84" class="col-sm-2 control-label ok-label">
+                        <label for="coin-bip84" class="mb-1 col-sm-2 control-label ok-label">
                           Coin
                         </label>
                         <div class="col-sm-10">
@@ -1129,25 +1135,25 @@
                   <table class="table min-w-full divide-y divide-gray-200 table-striped">
                     <thead class="bg-gray-50">
                       <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                        <div class="input-group">
+                        <div class="flex input-group">
                           <span>Path</span>&nbsp;&nbsp;
                           <button class="index-toggle">Toggle</button>
                         </div>
                       </th>
                       <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                        <div class="input-group">
+                        <div class="flex input-group">
                           <span>Address</span>&nbsp;&nbsp;
                           <button class="address-toggle">Toggle</button>
                         </div>
                       </th>
                       <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                        <div class="input-group">
+                        <div class="flex input-group">
                           <span>Public Key</span>&nbsp;&nbsp;
                           <button class="public-key-toggle">Toggle</button>
                         </div>
                       </th>
                       <th scope="col" class="px-6 py-3 text-xs font-medium tracking-wider text-left text-gray-500 uppercase">
-                        <div class="input-group">
+                        <div class="flex input-group">
                           <span>Private Key</span>&nbsp;&nbsp;
                           <button class="private-key-toggle">Toggle</button>
                         </div>
@@ -1202,7 +1208,7 @@
               <div class="px-6 py-4 !mb-0 flex justify-between items-center">
                 <div class="flex flex-wrap items-center space-x-2">
                   <input type="number" class="w-20 rows-to-add ok-input" value="20" />
-                  <span>more row starting from index</span>
+                  <span class="text-sm text-gray-700">more row starting from index</span>
                   <input type="number" class="w-20 more-rows-start-index ok-input" />
                 </div>
                 <button type="button" class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-md shadow-sm more hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
@@ -1219,7 +1225,7 @@
             <div class="ok-card__body">
               <div class="prose">
                 <h3>BIP39</h3>
-                <p>Mnemonic code for generating deterministic keys. Read more at the <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">official BIP39 spec</a>.</p>
+                <p>Recovery phrase for generating deterministic keys. Read more at the <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki">official BIP39 spec</a>.</p>
 
                 <h3>BIP32</h3>
                 <p>Hierarchical Deterministic Wallets. Read more at the <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki" target="_blank">official BIP32 spec</a>. See the demo at <a href="http://bip32.org/" target="_blank">bip32.org</a>.</p>
@@ -1241,9 +1247,9 @@
 
                 <p><strong><span>Do not store entropy.</span></strong></p>
 
-                <p>Storing entropy (such as keeping a deck of cards in a specific shuffled order) is unreliable compared to storing a mnemonic. Instead of storing entropy, store the mnemonic generated from the entropy. <a href="https://en.wikipedia.org/wiki/Steganography#Physical" target="_blank">Steganography</a> may be beneficial when storing the mnemonic.</p>
+                <p>Storing entropy (such as keeping a deck of cards in a specific shuffled order) is unreliable compared to storing a recovery phrase. Instead of storing entropy, store the recovery phrase generated from the entropy. <a href="https://en.wikipedia.org/wiki/Steganography#Physical" target="_blank">Steganography</a> may be beneficial when storing the recovery phrase.</p>
 
-                <p>The random mnemonic generator on this page uses a <a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues" target="_blank">cryptographically secure random number generator</a>. The built in random generator can generally be trusted more than your own intuition about randomness. If cryptographic randomness isn't available in your browser, this page will show a warning and the generate button will not work. In that case you might choose to use your own source of entropy.</p>
+                <p>The random recovery phrase generator on this page uses a <a href="https://developer.mozilla.org/en-US/docs/Web/API/RandomSource/getRandomValues" target="_blank">cryptographically secure random number generator</a>. The built in random generator can generally be trusted more than your own intuition about randomness. If cryptographic randomness isn't available in your browser, this page will show a warning and the generate button will not work. In that case you might choose to use your own source of entropy.</p>
                 
                 <p><a href="https://bitcointalk.org/index.php?topic=311000.msg3345309#msg3345309" target="_blank">You are not a good source of entropy.</a></p>
                 
@@ -1277,7 +1283,7 @@
                   Alternatively, download the file from the latest GitHub release - <a href="https://github.com/iancoleman/bip39/releases/latest/">https://github.com/iancoleman/bip39/releases/latest/</a>
                 </p>
                 <h3>This project is 100% open-source code</h3>
-                <p>Get the source code from the repository - <a href="https://github.com/iancoleman/bip39" target="_blank">https://github.com/OneKeyHQ/bip39</a>
+                <p>Get the source code from the repository - <a href="https://github.com/OneKeyHQ/bip39" target="_blank">https://github.com/OneKeyHQ/bip39</a>
                 </p>
                 <h3>Libraries</h3>
                 <ul>
@@ -1303,7 +1309,7 @@
       </label>
       <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
         <input type="checkbox" class="showSplitMnemonic ok-checkbox" />
-        <span class="text-sm text-gray-700">Show split mnemonic cards</span>
+        <span class="text-sm text-gray-700">Show split recovery phrase cards</span>
       </label>
       <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
         <input type="checkbox" class="showBip85 ok-checkbox" />

@@ -22,7 +22,7 @@
 
 @layer utilities {
   .visual-privacy .private-data {
-    display: none;
+    @apply text-transparent pointer-events-none !important;
   }
 
   .ok-textarea:read-only,
@@ -36,6 +36,10 @@
 
   .anchor-link-active {
     @apply text-gray-900 bg-gray-100 hover:bg-gray-100 !important;
+  }
+
+  .anchor-link-active svg {
+    @apply text-gray-500;
   }
 }
 
