@@ -1579,6 +1579,16 @@ td {
   margin-right: 0.25rem;
 }
 
+.-my-0\.5 {
+  margin-top: -0.125rem;
+  margin-bottom: -0.125rem;
+}
+
+.-my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1875,6 +1885,10 @@ td {
   border-radius: 0.5rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -2002,6 +2016,21 @@ td {
   padding-bottom: 1rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -2125,6 +2154,11 @@ td {
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.ring-green-500 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(0, 184, 18, var(--tw-ring-opacity));
 }
 
 .transition {
