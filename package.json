@@ -1,0 +1,16 @@
+{
+  "name": "onekey-bip39",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:iancoleman/bip39.git",
+  "author": "Franco Chen <chenhuifan.gg@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "npm": "^7.19.0",
+    "tailwindcss": "^2.2.4"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1"
+  }
+}
