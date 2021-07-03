@@ -22,7 +22,7 @@
 
 @layer utilities {
   .visual-privacy .private-data {
-    @apply text-transparent pointer-events-none !important;
+    @apply pointer-events-none filter blur-sm;
   }
 
   .ok-textarea:read-only,
@@ -40,6 +40,11 @@
 
   .anchor-link-active svg {
     @apply text-gray-500;
+  }
+
+  .entropy-container.hidden + *,
+  .generate-container.hidden + * {
+    @apply mt-0 !important;
   }
 }
 
@@ -73,15 +78,15 @@
   }
 
   .ok-card {
-    @apply bg-white shadow sm:border sm:border-gray-200 sm:rounded-lg;
+    @apply bg-white shadow md:border md:border-gray-200 md:rounded-lg;
   }
 
   .ok-card__header {
-    @apply flex justify-between px-4 py-5 sm:px-6;
+    @apply flex justify-between px-4 py-5 md:px-6;
   }
 
   .ok-card__body {
-    @apply px-4 py-5 space-y-6 space-y-reverse border-t border-gray-200 sm:px-6;
+    @apply px-4 py-5 space-y-6 border-t border-gray-200 md:px-6;
   }
 
   .ok-card__header-title {
@@ -97,7 +102,7 @@
   }
 
   .ok-tab {
-    @apply px-1 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700 hover:border-gray-300 whitespace-nowrap;
+    @apply block px-1 py-4 text-sm font-medium text-gray-500 border-b-2 border-transparent hover:text-gray-700 hover:border-gray-300 whitespace-nowrap;
   }
 
   .active .ok-tab {
@@ -113,6 +118,6 @@
   }
 
   .insert-card {
-    @apply p-6 border border-gray-200 rounded-lg bg-gray-50;
+    @apply p-3 space-y-6 border border-gray-200 rounded-lg sm:p-6 bg-gray-50;
   }
 }
