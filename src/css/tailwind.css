@@ -21,7 +21,8 @@
 }
 
 @layer utilities {
-  .visual-privacy .private-data {
+  .visual-privacy .private-data,
+  .addresses .invisible {
     @apply pointer-events-none filter blur-sm;
   }
 
