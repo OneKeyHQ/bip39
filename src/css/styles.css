@@ -1195,6 +1195,35 @@ td {
   margin-bottom: 0;
 }
 
+.ok-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 64rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .ok-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .ok-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ok-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 .ok-textarea {
   display: block;
   width: 100%;
@@ -1572,11 +1601,6 @@ td {
   margin: 0.25rem;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .-mx-4 {
   margin-left: -1rem;
   margin-right: -1rem;
@@ -1605,6 +1629,11 @@ td {
 .-my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-2 {
@@ -1743,10 +1772,6 @@ td {
   min-width: 100%;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
-}
-
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1755,8 +1780,8 @@ td {
   max-width: 100%;
 }
 
-.max-w-6xl {
-  max-width: 72rem;
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .flex-shrink-0 {
@@ -1962,16 +1987,6 @@ td {
   padding: 1.5rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-8 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1985,6 +2000,11 @@ td {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-1 {
@@ -2020,6 +2040,11 @@ td {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .pb-4 {
@@ -2371,6 +2396,46 @@ td {
 }
 
 @layer components {
+  .ok-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ok-container {
+    max-width: 64rem;
+  }
+
+  .ok-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .ok-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .ok-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .ok-container {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .ok-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
   .ok-textarea {
     display: block;
   }
@@ -2959,6 +3024,10 @@ td {
     width: 5rem;
   }
 
+  .sm\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -3085,16 +3154,6 @@ td {
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .md\:py-16 {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
-
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -3103,6 +3162,16 @@ td {
   .md\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .md\:pb-8 {
@@ -3120,12 +3189,12 @@ td {
 }
 
 @media (min-width: 1024px) {
-  .lg\:col-span-4 {
-    grid-column: span 4 / span 4;
+  .lg\:top-8 {
+    top: 2rem;
   }
 
-  .lg\:col-span-8 {
-    grid-column: span 8 / span 8;
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
 
   .lg\:mx-0 {
@@ -3137,16 +3206,46 @@ td {
     display: grid;
   }
 
+  .lg\:max-w-\[240px\] {
+    max-width: 240px;
+  }
+
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
   }
 
   .lg\:gap-4 {
     gap: 1rem;
   }
 
+  .lg\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(0px * var(--tw-space-x-reverse));
+    margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:px-8 {
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:py-0 {
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 }
