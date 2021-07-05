@@ -3234,3 +3234,13 @@ td {
     line-height: 2.5rem;
   }
 }
+
+@media (min-width: 1024px) {
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-9 {
+    grid-column: span 9 / span 9;
+  }
+}
