@@ -7,7 +7,6 @@ from io import open
 
 # It removes script and style tags and replaces with the file content.
 
-
 def compile(sourcefile):
     f = open(os.path.join("src", sourcefile), "r", encoding="utf-8")
     page = f.read()
@@ -28,15 +27,15 @@ def compile(sourcefile):
 
     # Style tags
 
-    stylesFinder = re.compile("""<link rel="stylesheet" href="(.*)">""")
+    stylesFinder = re.compile("""<link rel="stylesheet" href="(.*)" />""")
     styles = stylesFinder.findall(page)
-
     for style in styles:
         filename = os.path.join("src", style)
         s = open(filename, "r", encoding="utf-8")
+        print("Writing " + filename + " into html")
         styleContent = "<style>%s</style>" % s.read()
         s.close()
-        styleTag = """<link rel="stylesheet" href="%s">""" % style
+        styleTag = """<link rel="stylesheet" href="%s" />""" % style
         page = page.replace(styleTag, styleContent)
 
     # Write the standalone file
