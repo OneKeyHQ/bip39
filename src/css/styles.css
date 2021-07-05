@@ -1648,6 +1648,14 @@ td {
   margin-bottom: 0px;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.-mr-1 {
+  margin-right: -0.25rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1688,10 +1696,6 @@ td {
   margin-bottom: -0.25rem;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
@@ -1720,10 +1724,6 @@ td {
   margin-bottom: 0px !important;
 }
 
-.-mr-1 {
-  margin-right: -0.25rem;
-}
-
 .block {
   display: block;
 }
@@ -1748,6 +1748,10 @@ td {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1760,12 +1764,16 @@ td {
   height: 1.5rem;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
 .max-h-\[520px\] {
   max-height: 520px;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-5 {
@@ -1776,10 +1784,6 @@ td {
   width: 2rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-14 {
   width: 3.5rem;
 }
@@ -1788,20 +1792,12 @@ td {
   width: 1.5rem;
 }
 
-.w-10 {
-  width: 2.5rem;
-}
-
 .min-w-full {
   min-width: 100%;
 }
 
 .min-w-\[100px\] {
   min-width: 100px;
-}
-
-.min-w-\[80px\] {
-  min-width: 80px;
 }
 
 .max-w-2xl {
@@ -1918,12 +1914,12 @@ td {
   white-space: nowrap;
 }
 
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded {
@@ -1942,6 +1938,11 @@ td {
   border-top-width: 1px;
 }
 
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgba(229, 231, 235, var(--tw-border-opacity));
@@ -1954,11 +1955,6 @@ td {
 
 .border-transparent {
   border-color: transparent;
-}
-
-.border-gray-300 {
-  --tw-border-opacity: 1;
-  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -2015,9 +2011,9 @@ td {
   padding: 1.5rem;
 }
 
-.px-1 {
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .py-2 {
@@ -2025,14 +2021,14 @@ td {
   padding-bottom: 0.5rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .py-1 {
@@ -2090,14 +2086,14 @@ td {
   text-align: left;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-xs {
@@ -2105,12 +2101,12 @@ td {
   line-height: 1rem;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
 .font-medium {
   font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-normal {
@@ -3008,14 +3004,14 @@ td {
   }
 }
 
-.hover\:bg-gray-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
-}
-
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-200:hover {
@@ -3049,14 +3045,14 @@ td {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:ring-green-500:focus {
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(0, 184, 18, var(--tw-ring-opacity));
-}
-
 .focus\:ring-green-600:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgba(0, 170, 17, var(--tw-ring-opacity));
+}
+
+.focus\:ring-green-500:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgba(0, 184, 18, var(--tw-ring-opacity));
 }
 
 .focus\:ring-offset-2:focus {
@@ -3132,6 +3128,14 @@ td {
     margin-right: 0px;
   }
 
+  .md\:ml-0\.5 {
+    margin-left: 0.125rem;
+  }
+
+  .md\:ml-0 {
+    margin-left: 0px;
+  }
+
   .md\:mb-8 {
     margin-bottom: 2rem;
   }
@@ -3146,22 +3150,6 @@ td {
 
   .md\:-mr-2 {
     margin-right: -0.5rem;
-  }
-
-  .md\:ml-1 {
-    margin-left: 0.25rem;
-  }
-
-  .md\:ml-2 {
-    margin-left: 0.5rem;
-  }
-
-  .md\:ml-0\.5 {
-    margin-left: 0.125rem;
-  }
-
-  .md\:ml-0 {
-    margin-left: 0px;
   }
 
   .md\:block {
