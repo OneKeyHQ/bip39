@@ -33,9 +33,16 @@ function createPopover() {
   const derivedAddressesPopoverContent = document.getElementById(
     "derivedAddressesPopoverContent"
   );
+  const languagePopoverBtn = document.getElementById(
+    "languagePopoverBtn"
+  );
+  const languagePopoverContent = document.getElementById(
+    "languagePopoverContent"
+  );
 
   recoveryPhrasePopoverContent.style.display = "block";
   derivedAddressesPopoverContent.style.display = "block";
+  languagePopoverContent.style.display = "block";
 
   tippy(recoveryPhrasePopoverBtn, {
     content: recoveryPhrasePopoverContent,
@@ -62,6 +69,20 @@ function createPopover() {
     theme: "light-border",
     trigger: "click",
     placement: "bottom-end",
+    distance: 16,
+  });
+
+  tippy(languagePopoverBtn, {
+    content: languagePopoverContent,
+    arrow: true,
+    arrowType: "round",
+    animation: "shift-away",
+    duration: 150,
+    interactive: true,
+    allowHTML: true,
+    theme: "light-border",
+    trigger: "click",
+    placement: "bottom",
     distance: 16,
   });
 }
