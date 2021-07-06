@@ -1550,6 +1550,48 @@ td {
   }
 }
 
+.dropdown {
+  position: relative;
+  align-self: flex-start;
+}
+
+.dropdown__menu {
+  pointer-events: none;
+  position: absolute;
+  right: -0.5rem;
+  top: 100%;
+  transform-origin: top right;
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: var(--tw-transform);
+  transform: var(--tw-transform);
+  border-radius: 0.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  padding: 0.25rem;
+  opacity: 0;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.dropdown__menu--active {
+  pointer-events: auto;
+  --tw-translate-y: 0.5rem;
+  transform: var(--tw-transform);
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: var(--tw-transform);
+  opacity: 1;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1792,12 +1834,36 @@ td {
   width: 1.5rem;
 }
 
+.w-72 {
+  width: 18rem;
+}
+
 .min-w-full {
   min-width: 100%;
 }
 
 .min-w-\[100px\] {
   min-width: 100px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
+}
+
+.min-w-\[160px\] {
+  min-width: 160px;
+}
+
+.min-w-\[120px\] {
+  min-width: 120px;
+}
+
+.min-w-\[240px\] {
+  min-width: 240px;
+}
+
+.min-w-\[320px\] {
+  min-width: 320px;
 }
 
 .max-w-2xl {
@@ -3001,6 +3067,102 @@ td {
     .insert-card {
       padding: 1.5rem;
     }
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown {
+    align-self: flex-start;
+  }
+
+  .dropdown__menu {
+    pointer-events: none;
+  }
+
+  .dropdown__menu {
+    position: absolute;
+  }
+
+  .dropdown__menu {
+    right: -0.5rem;
+  }
+
+  .dropdown__menu {
+    top: 100%;
+  }
+
+  .dropdown__menu {
+    transform-origin: top right;
+  }
+
+  .dropdown__menu {
+    --tw-scale-x: .95;
+    --tw-scale-y: .95;
+    transform: var(--tw-transform);
+  }
+
+  .dropdown__menu {
+    transform: var(--tw-transform);
+  }
+
+  .dropdown__menu {
+    border-radius: 0.5rem;
+  }
+
+  .dropdown__menu {
+    border-width: 1px;
+  }
+
+  .dropdown__menu {
+    --tw-border-opacity: 1;
+    border-color: rgba(209, 213, 219, var(--tw-border-opacity));
+  }
+
+  .dropdown__menu {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .dropdown__menu {
+    padding: 0.25rem;
+  }
+
+  .dropdown__menu {
+    opacity: 0;
+  }
+
+  .dropdown__menu {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .dropdown__menu {
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  .dropdown__menu--active {
+    pointer-events: auto;
+  }
+
+  .dropdown__menu--active {
+    --tw-translate-y: 0.5rem;
+    transform: var(--tw-transform);
+  }
+
+  .dropdown__menu--active {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: var(--tw-transform);
+  }
+
+  .dropdown__menu--active {
+    opacity: 1;
   }
 }
 

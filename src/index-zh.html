@@ -24,7 +24,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/tippy-lightBorder.css" />
   </head>
   <body>
     <!-- Container -->
@@ -43,10 +42,20 @@
           </a>
         </div>
         <div>
-          <button id="languagePopoverBtn" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-green-600" type="button" aria-expanded="false" aria-haspopup="true">
-            中文
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2 -mr-1" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-          </button>
+          <div class="dropdown js-dropdown">
+            <button id="languagePopoverBtn" class="inline-flex justify-center w-full px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-full shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-green-600" type="button" aria-expanded="false" aria-haspopup="true">
+              中文
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 ml-2 -mr-1" aria-hidden="true"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+            </button>
+            <div id="languagePopoverContent" class="dropdown__menu min-w-[120px]">
+              <a class="block p-2 text-sm text-left text-gray-700 transition rounded-md cursor-pointer hover:bg-gray-100 hover:text-gray-900">
+                中文
+              </a>
+              <a class="block p-2 text-sm text-left text-gray-700 transition rounded-md cursor-pointer hover:bg-gray-100 hover:text-gray-900" href="./index.html">
+                English
+              </a>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -108,13 +117,29 @@
                 <p class="max-w-2xl mt-1 text-sm text-gray-500">您可以输入已有的助记词，或生成新的随机助记词。</p>
               </div>
               <!-- Card / Header / Controls -->
-              <button id="recoveryPhrasePopoverBtn" type="button" class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" aria-expanded="false" aria-haspopup="true">
-                <span class="sr-only">打开选项</span>
-                <!-- Heroicon name: solid/dots-vertical -->
-                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
-                </svg>
-              </button>
+              <div class="dropdown js-dropdown">
+                <button id="recoveryPhrasePopoverBtn" type="button" class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" aria-expanded="false" aria-haspopup="true">
+                  <span class="sr-only">打开选项</span>
+                  <!-- Heroicon name: solid/dots-vertical -->
+                  <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                  </svg>
+                </button>
+                <div id="recoveryPhrasePopoverContent" class="dropdown__menu">
+                  <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
+                    <input type="checkbox" class="use-entropy ok-checkbox" />
+                    <span class="text-sm text-gray-700 whitespace-nowrap">显示「熵」详细信息</span>
+                  </label>
+                  <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
+                    <input type="checkbox" class="showSplitMnemonic ok-checkbox" />
+                    <span class="text-sm text-gray-700 whitespace-nowrap">显示「分片助记词」</span>
+                  </label>
+                  <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
+                    <input type="checkbox" class="showBip85 ok-checkbox" />
+                    <span class="text-sm text-gray-700 whitespace-nowrap">显示 BIP85</span>
+                  </label>
+                </div>
+              </div>
             </div>
             <!-- Card / Body -->
             <div class="ok-card__body">
@@ -1122,13 +1147,80 @@
                   </li>
                 </ul>
               </div>
-              <button id="derivedAddressesPopoverBtn" type="button" class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" aria-expanded="false" aria-haspopup="true">
-                <span class="sr-only">Open options</span>
-                <!-- Heroicon name: solid/dots-vertical -->
-                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                  <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
-                </svg>
-              </button>
+              <div class="dropdown js-dropdown">
+                <button id="derivedAddressesPopoverBtn" type="button" class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500" aria-expanded="false" aria-haspopup="true">
+                  <span class="sr-only">Open options</span>
+                  <!-- Heroicon name: solid/dots-vertical -->
+                  <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                  </svg>
+                </button>
+                <div id="derivedAddressesPopoverContent" class="dropdown__menu w-72">
+                  <div class="hidden col-md-12 bch-addr-type-container">
+                    <div class="radio">
+                      <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
+                        <input
+                          type="radio"
+                          value="cashaddr"
+                          name="bch-addr-type"
+                          class="use-bch-cashaddr-addresses ok-radio"
+                          checked="checked"
+                        />
+                        <span class="text-sm text-gray-700">为比特币现金使用 CashAddr 地址（如以 'q' 而不是 '1' 开头）</span>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
+                        <input
+                          type="radio"
+                          value="bitpay"
+                          name="bch-addr-type"
+                          class="use-bch-bitpay-addresses ok-radio"
+                        />
+                        <span class="text-sm text-gray-700">为比特币现金使用 BitPay-style 地址（如以 'C' 而不是 '1' 开头）</span>
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
+                        <input
+                          type="radio"
+                          value="legacy"
+                          name="bch-addr-type"
+                          class="use-bch-legacy-addresses ok-radio"
+                        />
+                        <span class="text-sm text-gray-700">为比特币现金使用传统地址（以 '1' 开头）</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div>
+                    <div class="p-2 text-left">
+                      <div>
+                        <p class="mb-1 ok-label">使用 BIP38 加密私钥</p>
+                        <div class="relative">
+                          <input
+                            type="text"
+                            class="pl-[38px] bip38-password private-data ok-input"
+                            autocomplete="off"
+                            autocorrect="off"
+                            autocapitalize="off"
+                            spellcheck="false"
+                            placeholder="密码（可选）"
+                          />
+                          <input type="checkbox" class="absolute left-[11px] top-[11px] use-bip38 ok-checkbox" />
+                        </div>
+                        <p class="ok-helper-text">启用 BIP38 意味着每个密钥需要几分钟才能生成</p>
+                      </div>
+                    </div>
+                    <div class="mt-2 checkbox">
+                      <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
+                        <input class="hardened-addresses ok-checkbox" type="checkbox" />
+                        <span class="text-sm text-gray-700">使用硬化地址</span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="p-0 ok-card__body">
               <div class="addresses-type tab-content">
@@ -1289,97 +1381,6 @@
       </div>
     </div>
 
-    <!-- Tooltips & Popover -->
-    <div id="recoveryPhrasePopoverContent" style="display: none;" class="py-1">
-      <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
-        <input type="checkbox" class="use-entropy ok-checkbox" />
-        <span class="text-sm text-gray-700">显示「熵」详细信息</span>
-      </label>
-      <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
-        <input type="checkbox" class="showSplitMnemonic ok-checkbox" />
-        <span class="text-sm text-gray-700">显示「分片助记词」</span>
-      </label>
-      <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
-        <input type="checkbox" class="showBip85 ok-checkbox" />
-        <span class="text-sm text-gray-700">显示 BIP85</span>
-      </label>
-    </div>
-
-    <div id="derivedAddressesPopoverContent" style="display: none;" class="py-1">
-      <div class="hidden col-md-12 bch-addr-type-container">
-        <div class="radio">
-          <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
-            <input
-              type="radio"
-              value="cashaddr"
-              name="bch-addr-type"
-              class="use-bch-cashaddr-addresses ok-radio"
-              checked="checked"
-            />
-            <span class="text-sm text-gray-700">为比特币现金使用 CashAddr 地址（如以 'q' 而不是 '1' 开头）</span>
-          </label>
-        </div>
-        <div class="radio">
-          <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
-            <input
-              type="radio"
-              value="bitpay"
-              name="bch-addr-type"
-              class="use-bch-bitpay-addresses ok-radio"
-            />
-            <span class="text-sm text-gray-700">为比特币现金使用 BitPay-style 地址（如以 'C' 而不是 '1' 开头）</span>
-          </label>
-        </div>
-        <div class="radio">
-          <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
-            <input
-              type="radio"
-              value="legacy"
-              name="bch-addr-type"
-              class="use-bch-legacy-addresses ok-radio"
-            />
-            <span class="text-sm text-gray-700">为比特币现金使用传统地址（以 '1' 开头）</span>
-          </label>
-        </div>
-      </div>
-
-      <div>
-        <div class="p-2 text-left">
-          <div>
-            <p class="mb-1 ok-label">使用 BIP38 加密私钥</p>
-            <div class="relative">
-              <input
-                type="text"
-                class="pl-[38px] bip38-password private-data ok-input"
-                autocomplete="off"
-                autocorrect="off"
-                autocapitalize="off"
-                spellcheck="false"
-                placeholder="密码（可选）"
-              />
-              <input type="checkbox" class="absolute left-[11px] top-[11px] use-bip38 ok-checkbox" />
-            </div>
-            <p class="ok-helper-text">启用 BIP38 意味着每个密钥需要几分钟才能生成</p>
-          </div>
-        </div>
-        <div class="mt-2 checkbox">
-          <label class="flex items-center p-2 transition rounded-md cursor-pointer hover:bg-gray-100">
-            <input class="hardened-addresses ok-checkbox" type="checkbox" />
-            <span class="text-sm text-gray-700">使用硬化地址</span>
-          </label>
-        </div>
-      </div>
-    </div>
-
-    <div id="languagePopoverContent" style="display: none;" class="py-1 min-w-[100px]">
-      <a class="block p-2 text-sm text-left text-gray-700 transition rounded-md cursor-pointer hover:bg-gray-100 hover:text-gray-900">
-        中文
-      </a>
-      <a class="block p-2 text-sm text-left text-gray-700 transition rounded-md cursor-pointer hover:bg-gray-100 hover:text-gray-900" href="./index.html">
-        English
-      </a>
-    </div>
-
     <!-- QR Code -->
     <div class="fixed hidden qr-container top-4 right-4">
       <div class="hidden qr-hint">
@@ -1466,8 +1467,6 @@
     <script src="js/entropy.js"></script>
     <script src="js/index.js"></script>
     <!-- Customizing JS -->
-    <script src="js/tippy-popper.js"></script>
-    <script src="js/tippy.js"></script>
     <script src="js/extend.js"></script>
   </body>
 </html>

@@ -129,4 +129,16 @@
   .insert-card {
     @apply p-3 space-y-6 border border-gray-200 rounded-lg sm:p-6 bg-gray-50;
   }
+
+  .dropdown {
+    @apply relative self-start;
+  }
+
+  .dropdown__menu {
+    @apply absolute p-1 transition origin-top-right transform scale-95 bg-white border border-gray-300 rounded-lg shadow-lg opacity-0 pointer-events-none -right-2 top-full;
+  }
+
+  .dropdown__menu--active {
+    @apply scale-100 translate-y-2 opacity-100 pointer-events-auto;
+  }
 }

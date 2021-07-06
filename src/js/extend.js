@@ -20,72 +20,42 @@ function smoothScroll() {
   });
 }
 
-function createPopover() {
-  const recoveryPhrasePopoverBtn = document.getElementById(
-    "recoveryPhrasePopoverBtn"
-  );
-  const recoveryPhrasePopoverContent = document.getElementById(
-    "recoveryPhrasePopoverContent"
-  );
-  const derivedAddressesPopoverBtn = document.getElementById(
-    "derivedAddressesPopoverBtn"
-  );
-  const derivedAddressesPopoverContent = document.getElementById(
-    "derivedAddressesPopoverContent"
-  );
-  const languagePopoverBtn = document.getElementById(
-    "languagePopoverBtn"
-  );
-  const languagePopoverContent = document.getElementById(
-    "languagePopoverContent"
-  );
+// Get the trigger of dropdown
+const enableDropdown = (btnID, menuID) => {
+  const dropdownActiveClass = "dropdown__menu--active";
 
-  recoveryPhrasePopoverContent.style.display = "block";
-  derivedAddressesPopoverContent.style.display = "block";
-  languagePopoverContent.style.display = "block";
+  const trigger = document.getElementById(btnID);
 
-  tippy(recoveryPhrasePopoverBtn, {
-    content: recoveryPhrasePopoverContent,
-    arrow: true,
-    arrowType: "round",
-    animation: "shift-away",
-    duration: 150,
-    interactive: true,
-    allowHTML: true,
-    theme: "light-border",
-    trigger: "click",
-    placement: "bottom-end",
-    distance: 16,
+  // Get content of dropdown
+  const dropdownMenu = document.getElementById(menuID);
+
+  const showDropdown = () => {
+    dropdownMenu.classList.add(dropdownActiveClass);
+  };
+
+  const hideDropdown = () => {
+    dropdownMenu.classList.remove(dropdownActiveClass);
+  };
+
+  // Click trigger to show content of dropdown
+  trigger.addEventListener("click", function () {
+    if (
+      dropdownMenu.classList.contains(dropdownActiveClass)
+    ) {
+      hideDropdown();
+    } else {
+      showDropdown();
+    }
   });
 
-  tippy(derivedAddressesPopoverBtn, {
-    content: derivedAddressesPopoverContent,
-    arrow: true,
-    arrowType: "round",
-    animation: "shift-away",
-    duration: 150,
-    interactive: true,
-    allowHTML: true,
-    theme: "light-border",
-    trigger: "click",
-    placement: "bottom-end",
-    distance: 16,
-  });
-
-  tippy(languagePopoverBtn, {
-    content: languagePopoverContent,
-    arrow: true,
-    arrowType: "round",
-    animation: "shift-away",
-    duration: 150,
-    interactive: true,
-    allowHTML: true,
-    theme: "light-border",
-    trigger: "click",
-    placement: "bottom",
-    distance: 16,
+  // Hide content of dropdown if click outside of dropdown element
+  document.addEventListener("click", (event) => {
+    if (event.target.closest(".js-dropdown")) return
+    hideDropdown();
   });
 }
 
 smoothScroll();
-createPopover();
+enableDropdown("recoveryPhrasePopoverBtn", "recoveryPhrasePopoverContent");
+enableDropdown("languagePopoverBtn", "languagePopoverContent");
+enableDropdown("derivedAddressesPopoverBtn", "derivedAddressesPopoverContent");

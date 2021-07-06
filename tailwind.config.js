@@ -1,7 +1,7 @@
 module.exports = {
   purge: {
     content: ["./src/**/*.html"],
-    safelist: ["anchor-link-active"],
+    safelist: ["anchor-link-active", "dropdown__menu--active"],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
