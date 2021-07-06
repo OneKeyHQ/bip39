@@ -6,7 +6,6 @@
   "author": "Franco Chen <chenhuifan.gg@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "npm": "^7.19.0",
     "tailwindcss": "^2.2.4"
   },
   "dependencies": {
