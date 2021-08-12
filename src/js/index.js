@@ -3423,6 +3423,13 @@
             },
         },
         {
+            name: "STC - Starcoin",
+            onSelect: function () {
+                network = libs.bitcoin.networks.stratis;
+                setHdCoin(101010);
+            },
+        },
+        {
             name: "SUGAR - Sugarchain",
             onSelect: function() {
                 network = libs.bitcoin.networks.sugarchain;
