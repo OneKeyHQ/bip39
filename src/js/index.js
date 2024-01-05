@@ -1432,7 +1432,7 @@
                     const hrp = "cosmos";
                     address = CosmosBufferToAddress(keyPair.getPublicKeyBuffer(), hrp);
                     pubkey = CosmosBufferToPublic(keyPair.getPublicKeyBuffer(), hrp);
-                    privkey = keyPair.d.toBuffer().toString("base64");
+                    privkey = keyPair.d.toBuffer().toString("hex");
                 }
               
                 if (networks[DOM.network.val()].name == "RUNE - THORChain") {
