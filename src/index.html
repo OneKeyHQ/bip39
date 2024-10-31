@@ -1470,6 +1470,20 @@
     <div class="feedback-container">
       <div class="fixed max-w-full px-4 py-2 text-white -translate-x-1/2 bg-gray-800 rounded-md shadow-lg feedback left-1/2 bottom-4">Loading...</div>
     </div>
+    </div>
+
+
+    <div id="onekey-portal-footer">
+    </div>
+
+    <script>
+      fetch('https://onekey.so/internal/footer/')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('onekey-portal-footer').attachShadow({ mode: 'open' }).innerHTML = data;
+        })
+        .catch(console.error);
+    </script>
 
     <script type="text/template" id="address-row-template">
       <tr>
