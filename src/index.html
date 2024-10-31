@@ -1477,7 +1477,7 @@
     </div>
 
     <script>
-      fetch('https://onekey.so/internal/footer/')
+      fetch('/footer/en.html')
         .then(response => response.text())
         .then(data => {
           document.getElementById('onekey-portal-footer').attachShadow({ mode: 'open' }).innerHTML = data;
