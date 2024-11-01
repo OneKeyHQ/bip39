@@ -1,9 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+document
+  .getElementById("onekey-portal-footer")
+  .attachShadow({ mode: "open" }).innerHTML = `<!DOCTYPE html>
+<html lang="zh_CN">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <style>
+    <style
+      data-href="/styles.477495174d8b0a1c9881.css"
+      data-identity="gatsby-global-css"
+    >
       :root {
         --column-size-1: 200px;
         --swiper-theme-color: #007aff;
@@ -658,12 +662,12 @@
                           color: #9c9da7;
                         }</style
                       ><span class="css-1oo6zyg"
-                        >a member of
-                        <style data-emotion="css 16cffbw">
+                        ><style data-emotion="css 16cffbw">
                           .css-16cffbw {
                             color: #ffffff;
                           }</style
-                        ><span class="css-16cffbw">SatoKey Group</span></span
+                        ><span class="css-16cffbw">SatoKey Group</span>
+                        成员之一</span
                       >
                     </div>
                   </div>
@@ -860,8 +864,7 @@
                           color: #ffffff99;
                         }</style
                       ><span class="css-10mmgor"
-                        >Since 2019 to Now ｜ OneKey Limited All Rights
-                        Reserved</span
+                        >2019年至今｜OneKey Limited 版权所有</span
                       >
                     </div>
                   </div>
@@ -948,7 +951,7 @@
                         .css-19a7gb:first-letter {
                           text-transform: uppercase;
                         }</style
-                      ><span class="css-19a7gb">Products</span
+                      ><span class="css-19a7gb">产品</span
                       ><style data-emotion="css 1wp3dg5">
                         .css-1wp3dg5 {
                           display: -webkit-box;
@@ -1028,67 +1031,67 @@
                           rel="noreferrer"
                           href="https://onekey.so/shop"
                           class="css-j2au10"
-                          >View All Products</a
+                          >查看所有产品</a
                         >
                       </div>
                     </div>
                     <div class="css-cje3aw">
-                      <span class="css-19a7gb">Global shop</span>
+                      <span class="css-19a7gb">全球商店</span>
                       <div class="css-1wp3dg5">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://shop.onekey.so"
                           class="css-j2au10"
-                          >Global shop</a
+                          >全球商店</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://www.amazon.co.jp/stores/OneKey/page/A5D41D1F-05BA-4F0E-AAD6-02CED98C7A30"
                           class="css-j2au10"
-                          >Amazon Japan</a
+                          >亚马逊日本</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://www.amazon.com/stores/OneKey/page/4A384DC3-FA14-4173-AF75-B6B202C6662A"
                           class="css-j2au10"
-                          >Amazon U.S., Canada &amp; Mexico</a
+                          >亚马逊美国、加拿大和墨西哥</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://www.amazon.de/-/en/stores/OneKey/page/000B6454-AF32-4479-A1BB-1B059E3605B3"
                           class="css-j2au10"
-                          >Amazon Germany</a
+                          >亚马逊德国</a
                         >
                       </div>
                     </div>
                     <div class="css-cje3aw">
-                      <span class="css-19a7gb">App</span>
+                      <span class="css-19a7gb">应用程序</span>
                       <div class="css-1wp3dg5">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/download?client=desktop"
                           class="css-j2au10"
-                          >Desktop App</a
+                          >桌面端</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/download?client=mobile"
                           class="css-j2au10"
-                          >Mobile App</a
+                          >移动端</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/download?client=browserExtension"
                           class="css-j2au10"
-                          >Browser Extension</a
+                          >浏览器插件</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/download?client=bridge"
                           class="css-j2au10"
-                          >Hardware Bridge</a
+                          >硬件桥</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
@@ -1099,38 +1102,38 @@
                       </div>
                     </div>
                     <div class="css-cje3aw">
-                      <span class="css-19a7gb">Services</span>
+                      <span class="css-19a7gb">服务</span>
                       <div class="css-1wp3dg5">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://1key.so/swap"
                           class="css-j2au10"
-                          >Swap</a
+                          >闪兑</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://app.onekey.so/tab/home"
                           class="css-j2au10"
-                          >Portfolio</a
+                          >投资组合</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/tokens"
                           class="css-j2au10"
-                          >Token List</a
+                          >代币列表</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/cryptos"
                           class="css-j2au10"
-                          >Supported Chains</a
+                          >支持的链</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://bip39.onekey.so/"
                           class="css-j2au10"
-                          >Recovery Phrase Converter</a
+                          >助记词生成器</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
@@ -1141,122 +1144,122 @@
                       </div>
                     </div>
                     <div class="css-cje3aw">
-                      <span class="css-19a7gb">Developer</span>
+                      <span class="css-19a7gb">开发者</span>
                       <div class="css-1wp3dg5">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://developer.onekey.so/"
                           class="css-j2au10"
-                          >The Developer Portal</a
+                          >开发者门户</a
                         >
                       </div>
                     </div>
                     <div class="css-cje3aw">
-                      <span class="css-19a7gb">Learn</span>
+                      <span class="css-19a7gb">学习</span>
                       <div class="css-1wp3dg5">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/why"
                           class="css-j2au10"
-                          >Why Choose OneKey</a
+                          >为什么选择 OneKey</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/security"
                           class="css-j2au10"
-                          >Security Architecture</a
+                          >安全架构</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://blog.onekey.so/"
                           class="css-j2au10"
-                          >Our Blog</a
+                          >我们的博客</a
                         >
                       </div>
                     </div>
                     <div class="css-cje3aw">
-                      <span class="css-19a7gb">Solutions</span>
+                      <span class="css-19a7gb">解决方案</span>
                       <div class="css-1wp3dg5">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/enterprise"
                           class="css-j2au10"
-                          >Enterprise Solutions</a
+                          >企业解决方案</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/affiliate-program"
                           class="css-j2au10"
-                          >Referral</a
+                          >推荐返佣</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://onekey.so/co-branded-partnership"
                           class="css-j2au10"
-                          >Co-branded Products</a
+                          >联名产品</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://help.onekey.so/hc/articles/5967821214223"
                           class="css-j2au10"
-                          >Official Reseller</a
+                          >官方经销商</a
                         >
                       </div>
                     </div>
                     <div class="css-cje3aw">
-                      <span class="css-19a7gb">Support</span>
+                      <span class="css-19a7gb">技术支持</span>
                       <div class="css-1wp3dg5">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://help.onekey.so/"
                           class="css-j2au10"
-                          >Help Center</a
+                          >帮助中心</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://help.onekey.so/hc/requests/new"
                           class="css-j2au10"
-                          >Submit a Request</a
+                          >提交工单</a
                         >
                       </div>
                     </div>
                     <div class="css-cje3aw">
-                      <span class="css-19a7gb">About</span>
+                      <span class="css-19a7gb">关于</span>
                       <div class="css-1wp3dg5">
                         <a
                           target="_blank"
                           rel="noreferrer"
                           href="https://help.onekey.so/hc/articles/10081334240271"
                           class="css-j2au10"
-                          >The Company</a
+                          >公司信息</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://status.onekey.so/status/main"
                           class="css-j2au10"
-                          >System Status</a
+                          >系统状况</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://help.onekey.so/hc/articles/360002200956"
                           class="css-j2au10"
-                          >Media Kits</a
+                          >媒体资料</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://help.onekey.so/hc/articles/360002003315"
                           class="css-j2au10"
-                          >Privacy Policy</a
+                          >隐私政策</a
                         ><a
                           target="_blank"
                           rel="noreferrer"
                           href="https://help.onekey.so/hc/articles/360002014776"
                           class="css-j2au10"
-                          >User Agreement</a
+                          >用户协议</a
                         >
                       </div>
                     </div>
@@ -1416,8 +1419,7 @@
                       </style>
                       <div class="css-m66jbj">
                         <span class="css-10mmgor"
-                          >Since 2019 to Now ｜ OneKey Limited All Rights
-                          Reserved</span
+                          >2019年至今｜OneKey Limited 版权所有</span
                         >
                       </div>
                     </div>
@@ -1447,3 +1449,4 @@
     </div>
   </body>
 </html>
+`;
