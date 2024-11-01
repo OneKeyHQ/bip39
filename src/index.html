@@ -1476,14 +1476,7 @@
     <div id="onekey-portal-footer">
     </div>
 
-    <script>
-      fetch('https://onekey.so/internal/footer/')
-        .then(response => response.text())
-        .then(data => {
-          document.getElementById('onekey-portal-footer').attachShadow({ mode: 'open' }).innerHTML = data;
-        })
-        .catch(console.error);
-    </script>
+    <script src="js/footer.js"></script>
 
     <script type="text/template" id="address-row-template">
       <tr>
