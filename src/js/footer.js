@@ -7,10 +7,12 @@ document
   name="viewport"
   content="width=device-width, initial-scale=1, shrink-to-fit=no"
 />
-<meta name="generator" content="Gatsby 5.13.4" />
+<meta name="generator" content="Gatsby 5.14.1" />
 <meta data-react-helmet="true" name="robots" content="noindex" />
 <style
-  data-href="/styles.477495174d8b0a1c9881.css"
+  data-href="/styles.e51167fb7937e5bac24a.css"
+  integrity="sha512-lTIPS2zHl/I93fxcLw7ZNvR6afetvn5v6m+pajesVRZuIMsHL0qW3PU+ObGn86EWtnHqWQaNLkBPzaUBOcR6dw=="
+  crossorigin="anonymous"
   data-identity="gatsby-global-css"
 >
   :root {
@@ -36,7 +38,7 @@ document
     flex-direction: column;
   }
   .swiper-wrapper {
-    box-sizing: initial;
+    box-sizing: content-box;
     display: flex;
     height: 100%;
     position: relative;
@@ -104,19 +106,19 @@ document
     z-index: 10;
   }
   .swiper-3d .swiper-slide-shadow {
-    background: #00000026;
+    background: rgba(0, 0, 0, 0.15);
   }
   .swiper-3d .swiper-slide-shadow-left {
-    background-image: linear-gradient(270deg, #00000080, #0000);
+    background-image: linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent);
   }
   .swiper-3d .swiper-slide-shadow-right {
-    background-image: linear-gradient(90deg, #00000080, #0000);
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), transparent);
   }
   .swiper-3d .swiper-slide-shadow-top {
-    background-image: linear-gradient(0deg, #00000080, #0000);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
   }
   .swiper-3d .swiper-slide-shadow-bottom {
-    background-image: linear-gradient(180deg, #00000080, #0000);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent);
   }
   .swiper-css-mode > .swiper-wrapper {
     -ms-overflow-style: none;
@@ -169,7 +171,7 @@ document
     transition-timing-function: ease-out;
   }
   .swiper-scrollbar {
-    background: #0000001a;
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     position: relative;
     -ms-touch-action: none;
@@ -197,7 +199,7 @@ document
     z-index: 50;
   }
   .swiper-scrollbar-drag {
-    background: #00000080;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     height: 100%;
     left: 0;
@@ -213,7 +215,7 @@ document
   }
   .DialogOverlay {
     animation: overlayShow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
-    background-color: #0000003d;
+    background-color: rgba(0, 0, 0, 0.24);
     bottom: 0;
     left: 0;
     position: fixed;
@@ -304,6 +306,16 @@ document
     -moz-backface-visibility: hidden;
     -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
   }
+  .visuallyhidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    border: 0;
+    clip-path: inset(0 0 99.9% 99.9%);
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
   #content h1,
   #content h2,
   #content h3,
@@ -381,7 +393,7 @@ document
     height: 10px;
   }
   #content table ::-webkit-scrollbar-track {
-    background: #0000;
+    background: transparent;
   }
   #content table ::-webkit-scrollbar-thumb {
     background-color: #ceced3;
@@ -426,7 +438,7 @@ document
   .navigation-normal {
     display: none;
   }
-  @media (min-width: 720px) {
+  @media (min-width: 845px) {
     .navigation-normal {
       display: block;
     }
@@ -434,7 +446,7 @@ document
   .navigation-mobile {
     display: block;
   }
-  @media (min-width: 720px) {
+  @media (min-width: 845px) {
     .navigation-mobile {
       display: none;
     }
@@ -448,7 +460,7 @@ document
     border-radius: 0 !important;
   }
   .brands-examples-section-scrollbar {
-    background: #ffffff29;
+    background: hsla(0, 0%, 100%, 0.16);
     height: 1px;
     overflow: hidden;
   }
@@ -520,84 +532,97 @@ document
   </style>
 </noscript>
 <div id="___gatsby">
-  <style data-emotion="css-global gcd36n">
+  <style data-emotion="css-global yt8nca">
     @font-face {
       font-family: "Stabil Grotesk";
       font-display: block;
       font-weight: 400;
       font-style: normal;
-      src: url("/fonts/StabilGrotesk/StabilGrotesk-Light.woff2") format("woff2"),
-        url("/fonts/StabilGrotesk/StabilGrotesk-Light.woff") format("woff");
+      src: url("https://asset.onekey-asset.com/portal/d286599179739ee6a929edbb26902b7d25dcbb47/fonts/StabilGrotesk/StabilGrotesk-Light.woff2")
+          format("woff2"),
+        url("https://asset.onekey-asset.com/portal/d286599179739ee6a929edbb26902b7d25dcbb47/fonts/StabilGrotesk/StabilGrotesk-Light.woff")
+          format("woff");
+    }
+    @font-face {
+      font-family: "Stabil Grotesk";
+      font-display: block;
+      font-weight: 500;
+      font-style: normal;
+      src: url("https://asset.onekey-asset.com/portal/d286599179739ee6a929edbb26902b7d25dcbb47/fonts/StabilGrotesk/StabilGrotesk-Regular.woff2")
+          format("woff2"),
+        url("https://asset.onekey-asset.com/portal/d286599179739ee6a929edbb26902b7d25dcbb47/fonts/StabilGrotesk/StabilGrotesk-Regular.woff")
+          format("woff");
     }
     @font-face {
       font-family: "Stabil Grotesk";
       font-display: block;
       font-weight: 600;
       font-style: normal;
-      src: url("/fonts/StabilGrotesk/StabilGrotesk-Medium.woff2")
+      src: url("https://asset.onekey-asset.com/portal/d286599179739ee6a929edbb26902b7d25dcbb47/fonts/StabilGrotesk/StabilGrotesk-Medium.woff2")
           format("woff2"),
-        url("/fonts/StabilGrotesk/StabilGrotesk-Medium.woff") format("woff");
+        url("https://asset.onekey-asset.com/portal/d286599179739ee6a929edbb26902b7d25dcbb47/fonts/StabilGrotesk/StabilGrotesk-Medium.woff")
+          format("woff");
     }
   </style>
   <div style="outline: none" tabindex="-1" id="gatsby-focus-wrapper">
     <div>
-      <style data-emotion="css 15efywb">
-        .css-15efywb {
+      <style data-emotion="css 1px0y8z">
+        .css-1px0y8z {
           background-color: #101111;
           border-top-left-radius: 64px;
           border-top-right-radius: 64px;
         }
         @media (min-width: 960px) {
-          .css-15efywb {
+          .css-1px0y8z {
             padding-top: 88px;
             padding-bottom: 138px;
           }
         }
       </style>
-      <footer class="css-15efywb">
-        <style data-emotion="css 1r8r2ky-Container">
-          .css-1r8r2ky-Container {
+      <footer class="css-1px0y8z">
+        <style data-emotion="css 1wlhhb3-Container">
+          .css-1wlhhb3-Container {
             margin: 0 auto;
             max-width: 100%;
             padding-left: 24px;
             padding-right: 24px;
           }
           @media (min-width: 414px) {
-            .css-1r8r2ky-Container {
+            .css-1wlhhb3-Container {
               padding-left: 24px;
               padding-right: 24px;
             }
           }
           @media (min-width: 960px) {
-            .css-1r8r2ky-Container {
+            .css-1wlhhb3-Container {
               padding-left: 0;
               padding-right: 0;
               max-width: 896px;
             }
           }
           @media (min-width: 1200px) {
-            .css-1r8r2ky-Container {
+            .css-1wlhhb3-Container {
               max-width: 1124px;
             }
           }
           @media (min-width: 1440px) {
-            .css-1r8r2ky-Container {
+            .css-1wlhhb3-Container {
               max-width: 1312px;
             }
           }
           @media (min-width: 1920px) {
-            .css-1r8r2ky-Container {
+            .css-1wlhhb3-Container {
               max-width: 1552px;
             }
           }
         </style>
-        <div class="css-1r8r2ky-Container">
-          <style data-emotion="css 1iumjvi">
-            .css-1iumjvi {
+        <div class="css-1wlhhb3-Container">
+          <style data-emotion="css 9gfqgf">
+            .css-9gfqgf {
               display: block;
             }
             @media (min-width: 960px) {
-              .css-1iumjvi {
+              .css-9gfqgf {
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
@@ -608,16 +633,16 @@ document
               }
             }
           </style>
-          <div class="css-1iumjvi">
-            <style data-emotion="css ot9g46">
-              .css-ot9g46 {
+          <div class="css-9gfqgf">
+            <style data-emotion="css 11r7lom">
+              .css-11r7lom {
                 display: -webkit-box;
                 display: -webkit-flex;
                 display: -ms-flexbox;
                 display: flex;
               }
               @media (min-width: 960px) {
-                .css-ot9g46 {
+                .css-11r7lom {
                   -webkit-box-pack: justify;
                   -webkit-justify-content: space-between;
                   justify-content: space-between;
@@ -627,18 +652,18 @@ document
                 }
               }
             </style>
-            <div class="css-ot9g46">
-              <style data-emotion="css i9jdvx">
-                .css-i9jdvx {
+            <div class="css-11r7lom">
+              <style data-emotion="css 1r2o1rm">
+                .css-1r2o1rm {
                   padding: 40px 12px;
                 }
                 @media (min-width: 960px) {
-                  .css-i9jdvx {
+                  .css-1r2o1rm {
                     padding: 0;
                   }
                 }
               </style>
-              <div class="css-i9jdvx">
+              <div class="css-1r2o1rm">
                 <svg
                   width="233"
                   height="57"
@@ -669,77 +694,77 @@ document
                     </clipPath>
                   </defs>
                 </svg>
-                <style data-emotion="css 1j82rai">
-                  .css-1j82rai {
+                <style data-emotion="css bso4ht">
+                  .css-bso4ht {
                     margin-top: 6px;
                   }
                   @media (min-width: 960px) {
-                    .css-1j82rai {
+                    .css-bso4ht {
                       margin-top: 12px;
                     }
                   }
                 </style>
-                <div class="css-1j82rai">
-                  <style data-emotion="css nggg3">
-                    .css-nggg3 {
-                      font-weight: 400;
+                <div class="css-bso4ht">
+                  <style data-emotion="css qsecyr">
+                    .css-qsecyr {
+                      font-weight: 500;
                       font-size: 12px;
                       line-height: 14px;
                       color: #9c9da7;
                     }
                   </style>
-                  <style data-emotion="css 1oo6zyg">
-                    .css-1oo6zyg {
-                      font-weight: 400;
+                  <style data-emotion="css 1xd29dq">
+                    .css-1xd29dq {
+                      font-weight: 500;
                       font-size: 12px;
                       line-height: 14px;
                       color: #9c9da7;
                     }
                   </style>
-                  <span class="css-1oo6zyg">
+                  <span class="css-1xd29dq">
                     a member of
-                    <style data-emotion="css 16cffbw">
-                      .css-16cffbw {
+                    <style data-emotion="css d59fcq">
+                      .css-d59fcq {
                         color: #ffffff;
                       }
                     </style>
-                    <span class="css-16cffbw">SatoKey Group</span>
+                    <span class="css-d59fcq">SatoKey Group</span>
                   </span>
                 </div>
               </div>
-              <style data-emotion="css qmgxy2">
-                .css-qmgxy2 {
+              <style data-emotion="css 12rl58b">
+                .css-12rl58b {
                   display: none;
                 }
                 @media (min-width: 414px) {
-                  .css-qmgxy2 {
+                  .css-12rl58b {
                     display: none;
                   }
                 }
                 @media (min-width: 960px) {
-                  .css-qmgxy2 {
+                  .css-12rl58b {
                     display: block;
                   }
                 }
                 @media (min-width: 1200px) {
-                  .css-qmgxy2 {
+                  .css-12rl58b {
                     display: block;
                   }
                 }
                 @media (min-width: 1440px) {
-                  .css-qmgxy2 {
+                  .css-12rl58b {
                     display: block;
                   }
                 }
                 @media (min-width: 1920px) {
-                  .css-qmgxy2 {
+                  .css-12rl58b {
                     display: block;
                   }
                 }
               </style>
-              <div class="css-qmgxy2">
-                <style data-emotion="css hfiszv">
-                  .css-hfiszv {
+              <div class="css-12rl58b">
+                <style data-emotion="css 1u2xdtf">
+                  .css-1u2xdtf {
                     padding-top: 20px;
                     padding-bottom: 80px;
                     -webkit-flex-direction: column;
@@ -752,14 +777,14 @@ document
                     display: flex;
                   }
                   @media (min-width: 960px) {
-                    .css-hfiszv {
+                    .css-1u2xdtf {
                       padding: 0;
                       padding-bottom: 0;
                       padding-right: 20px;
                     }
                   }
                 </style>
-                <div class="css-hfiszv">
+                <div class="css-1u2xdtf">
                   <style data-emotion="css o5snkh">
                     .css-o5snkh {
                       gap: 24px;
@@ -773,8 +798,8 @@ document
                       opacity: 0.8;
                     }
                   </style>
-                  <style data-emotion="css 1gm3yof">
-                    .css-1gm3yof {
+                  <style data-emotion="css 1sqqwpe">
+                    .css-1sqqwpe {
                       display: -webkit-box;
                       display: -webkit-flex;
                       display: -ms-flexbox;
@@ -786,18 +811,18 @@ document
                       align-items: center;
                       color: #ffffff;
                     }
-                    .css-1gm3yof svg:hover {
+                    .css-1sqqwpe svg:hover {
                       opacity: 0.8;
                     }
                   </style>
-                  <div class="css-1gm3yof">
+                  <div class="css-1sqqwpe">
                     <style data-emotion="css zm3qx2">
                       .css-zm3qx2 {
                         color: #ffffff;
                       }
                     </style>
-                    <style data-emotion="css 1pimxyo">
-                      .css-1pimxyo {
+                    <style data-emotion="css 1cmwfgr">
+                      .css-1cmwfgr {
                         color: #ffffff;
                       }
                     </style>
@@ -805,7 +830,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://twitter.com/OneKeyHQ"
-                      class="css-1pimxyo"
+                      class="css-1cmwfgr"
                     >
                       <svg
                         viewBox="0 0 32 32"
@@ -824,7 +849,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://github.com/OneKeyHQ/"
-                      class="css-1pimxyo"
+                      class="css-1cmwfgr"
                     >
                       <svg
                         viewBox="0 0 32 32"
@@ -843,7 +868,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://blog.onekey.so"
-                      class="css-1pimxyo"
+                      class="css-1cmwfgr"
                     >
                       <svg
                         viewBox="0 0 1043.63 592.71"
@@ -865,7 +890,7 @@ document
                     target="_blank"
                     rel="noreferrer"
                     href="https://github.com/OneKeyHQ"
-                    class="css-foz0ft"
+                    class="css-nqgj01"
                   >
                     <svg
                       width="87"
@@ -888,31 +913,31 @@ document
                       </g>
                     </svg>
                   </a>
-                  <style data-emotion="css 10mmgor">
-                    .css-10mmgor {
-                      font-weight: 400;
+                  <style data-emotion="css 1c1dj2u">
+                    .css-1c1dj2u {
+                      font-weight: 500;
                       font-size: 12px;
                       line-height: 14px;
                       color: #ffffff99;
                     }
                   </style>
-                  <span class="css-10mmgor">
+                  <span class="css-1c1dj2u">
                     Since 2019 to Now ｜ OneKey Limited All Rights Reserved
                   </span>
                 </div>
               </div>
             </div>
-            <style data-emotion="css 1w9151q">
-              .css-1w9151q {
+            <style data-emotion="css t8iczu">
+              .css-t8iczu {
                 -webkit-flex: 1;
                 -ms-flex: 1;
                 flex: 1;
                 max-width: 1100px;
               }
             </style>
-            <div class="css-1w9151q">
-              <style data-emotion="css 1bqmsti">
-                .css-1bqmsti {
+            <div class="css-t8iczu">
+              <style data-emotion="css ld45sj">
+                .css-ld45sj {
                   display: -webkit-box;
                   display: -webkit-flex;
                   display: -ms-flexbox;
@@ -927,14 +952,14 @@ document
                   justify-content: flex-start;
                 }
                 @media (min-width: 1440px) {
-                  .css-1bqmsti {
+                  .css-ld45sj {
                     gap: 16px;
                   }
                 }
               </style>
-              <div class="css-1bqmsti">
-                <style data-emotion="css 2s37if">
-                  .css-2s37if {
+              <div class="css-ld45sj">
+                <style data-emotion="css ahi0zd">
+                  .css-ahi0zd {
                     width: 100%;
                     display: -webkit-box;
                     display: -webkit-flex;
@@ -947,32 +972,32 @@ document
                     gap: 32px;
                   }
                   @media (min-width: 414px) {
-                    .css-2s37if {
+                    .css-ahi0zd {
                       width: 50%;
                     }
                   }
                   @media (min-width: 960px) {
-                    .css-2s37if {
+                    .css-ahi0zd {
                       width: 33.3%;
                       padding-bottom: 80px;
                     }
                   }
                   @media (min-width: 1200px) {
-                    .css-2s37if {
+                    .css-ahi0zd {
                       width: 20%;
                     }
-                    .css-2s37if:last-child {
+                    .css-ahi0zd:last-child {
                       padding-right: 0;
                     }
                   }
                   @media (min-width: 1440px) {
-                    .css-2s37if {
+                    .css-ahi0zd {
                       width: 18.5%;
                       padding-bottom: 64px;
                     }
                   }
                 </style>
-                <div class="css-2s37if">
+                <div class="css-ahi0zd">
                   <style data-emotion="css 1ck57u9">
                     .css-1ck57u9 {
                       font-weight: 600;
@@ -985,21 +1010,21 @@ document
                       text-transform: uppercase;
                     }
                   </style>
-                  <style data-emotion="css 19a7gb">
-                    .css-19a7gb {
+                  <style data-emotion="css afrhei">
+                    .css-afrhei {
                       font-weight: 600;
                       font-size: 14px;
                       line-height: 17px;
                       color: #ffffff;
                       opacity: 0.6;
                     }
-                    .css-19a7gb:first-letter {
+                    .css-afrhei:first-letter {
                       text-transform: uppercase;
                     }
                   </style>
-                  <span class="css-19a7gb">Products</span>
-                  <style data-emotion="css 1wp3dg5">
-                    .css-1wp3dg5 {
+                  <span class="css-afrhei">Products</span>
+                  <style data-emotion="css 1mh49xg">
+                    .css-1mh49xg {
                       display: -webkit-box;
                       display: -webkit-flex;
                       display: -ms-flexbox;
@@ -1010,31 +1035,31 @@ document
                       gap: 12px;
                     }
                     @media (min-width: 414px) {
-                      .css-1wp3dg5 {
+                      .css-1mh49xg {
                         gap: 16px;
                       }
                     }
                   </style>
-                  <div class="css-1wp3dg5">
-                    <style data-emotion="css 1hj8pvv">
-                      .css-1hj8pvv {
-                        font-weight: 400;
+                  <div class="css-1mh49xg">
+                    <style data-emotion="css 3c30ma">
+                      .css-3c30ma {
+                        font-weight: 500;
                         font-size: 14px;
                         line-height: 17px;
                         color: #ffffff;
                       }
-                      .css-1hj8pvv:first-letter {
+                      .css-3c30ma:first-letter {
                         text-transform: uppercase;
                       }
                     </style>
-                    <style data-emotion="css j2au10">
-                      .css-j2au10 {
-                        font-weight: 400;
+                    <style data-emotion="css j6mzqe">
+                      .css-j6mzqe {
+                        font-weight: 500;
                         font-size: 14px;
                         line-height: 17px;
                         color: #ffffff;
                       }
-                      .css-j2au10:first-letter {
+                      .css-j6mzqe:first-letter {
                         text-transform: uppercase;
                       }
                     </style>
@@ -1042,7 +1067,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/products/onekey-pro-hardware-wallet/"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       OneKey Pro
                     </a>
@@ -1050,23 +1075,15 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/products/onekey-classic-1s-hardware-wallet/"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       OneKey Classic 1S
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://onekey.so/products/onekey-touch-hardware-wallet/"
-                      class="css-j2au10"
-                    >
-                      OneKey Touch
-                    </a>
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
                       href="https://onekey.so/products/onekey-lite-hardware-wallet/"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       OneKey Lite
                     </a>
@@ -1074,36 +1091,28 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/products/onekey-mini-hardware-wallet/"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       OneKey Mini
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://onekey.so/products/onekey-classic-hardware-wallet/"
-                      class="css-j2au10"
-                    >
-                      OneKey Classic
-                    </a>
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
                       href="https://onekey.so/shop"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       View All Products
                     </a>
                   </div>
                 </div>
-                <div class="css-2s37if">
-                  <span class="css-19a7gb">Global shop</span>
-                  <div class="css-1wp3dg5">
+                <div class="css-ahi0zd">
+                  <span class="css-afrhei">Global shop</span>
+                  <div class="css-1mh49xg">
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://shop.onekey.so"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Global shop
                     </a>
@@ -1111,7 +1120,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.amazon.co.jp/stores/OneKey/page/A5D41D1F-05BA-4F0E-AAD6-02CED98C7A30"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Amazon Japan
                     </a>
@@ -1119,7 +1128,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.amazon.com/stores/OneKey/page/4A384DC3-FA14-4173-AF75-B6B202C6662A"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Amazon U.S., Canada &amp; Mexico
                     </a>
@@ -1127,20 +1136,20 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://www.amazon.de/-/en/stores/OneKey/page/000B6454-AF32-4479-A1BB-1B059E3605B3"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Amazon Germany
                     </a>
                   </div>
                 </div>
-                <div class="css-2s37if">
-                  <span class="css-19a7gb">App</span>
-                  <div class="css-1wp3dg5">
+                <div class="css-ahi0zd">
+                  <span class="css-afrhei">App</span>
+                  <div class="css-1mh49xg">
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/download?client=desktop"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Desktop App
                     </a>
@@ -1148,7 +1157,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/download?client=mobile"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Mobile App
                     </a>
@@ -1156,7 +1165,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/download?client=browserExtension"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Browser Extension
                     </a>
@@ -1164,94 +1173,78 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/download?client=bridge"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Hardware Bridge
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://1key.so/"
-                      class="css-j2au10"
+                      href="https://1key.so"
+                      class="css-j6mzqe"
                     >
                       Web dApp
                     </a>
                   </div>
                 </div>
-                <div class="css-2s37if">
-                  <span class="css-19a7gb">Services</span>
-                  <div class="css-1wp3dg5">
+                <div class="css-ahi0zd">
+                  <span class="css-afrhei">Services</span>
+                  <div class="css-1mh49xg">
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://1key.so/swap"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Swap
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://app.onekey.so/tab/home"
-                      class="css-j2au10"
-                    >
-                      Portfolio
-                    </a>
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
-                      href="https://onekey.so/tokens"
-                      class="css-j2au10"
-                    >
-                      Token List
-                    </a>
-                    <a
-                      target="_blank"
-                      rel="noreferrer"
                       href="https://onekey.so/cryptos"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
-                      Supported Chains
+                      Supported Cryptos
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://bip39.onekey.so/"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Recovery Phrase Converter
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://help.onekey.so/hc/en-us/articles/10453167224463-Supported-EIPs"
-                      class="css-j2au10"
+                      href="https://help.onekey.so/hc/articles/10453167224463-Supported-EIPs"
+                      class="css-j6mzqe"
                     >
                       EIPs
                     </a>
                   </div>
                 </div>
-                <div class="css-2s37if">
-                  <span class="css-19a7gb">Developer</span>
-                  <div class="css-1wp3dg5">
+                <div class="css-ahi0zd">
+                  <span class="css-afrhei">Developer</span>
+                  <div class="css-1mh49xg">
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://developer.onekey.so/"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       The Developer Portal
                     </a>
                   </div>
                 </div>
-                <div class="css-2s37if">
-                  <span class="css-19a7gb">Learn</span>
-                  <div class="css-1wp3dg5">
+                <div class="css-ahi0zd">
+                  <span class="css-afrhei">Learn</span>
+                  <div class="css-1mh49xg">
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/why"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Why Choose OneKey
                     </a>
@@ -1259,7 +1252,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/security"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Security Architecture
                     </a>
@@ -1267,20 +1260,20 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://blog.onekey.so/"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Our Blog
                     </a>
                   </div>
                 </div>
-                <div class="css-2s37if">
-                  <span class="css-19a7gb">Solutions</span>
-                  <div class="css-1wp3dg5">
+                <div class="css-ahi0zd">
+                  <span class="css-afrhei">Solutions</span>
+                  <div class="css-1mh49xg">
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/enterprise"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Enterprise Solutions
                     </a>
@@ -1288,7 +1281,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/affiliate-program"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Referral
                     </a>
@@ -1296,7 +1289,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://onekey.so/co-branded-partnership"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Co-branded Products
                     </a>
@@ -1304,20 +1297,20 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://help.onekey.so/hc/articles/5967821214223"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Official Reseller
                     </a>
                   </div>
                 </div>
-                <div class="css-2s37if">
-                  <span class="css-19a7gb">Support</span>
-                  <div class="css-1wp3dg5">
+                <div class="css-ahi0zd">
+                  <span class="css-afrhei">Support</span>
+                  <div class="css-1mh49xg">
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://help.onekey.so/"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Help Center
                     </a>
@@ -1325,36 +1318,44 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://help.onekey.so/hc/requests/new"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Submit a Request
                     </a>
+                    <a
+                      target="_blank"
+                      rel="noreferrer"
+                      href="https://firmware.onekey.so"
+                      class="css-j6mzqe"
+                    >
+                      Firmware Update
+                    </a>
                   </div>
                 </div>
-                <div class="css-2s37if">
-                  <span class="css-19a7gb">About</span>
-                  <div class="css-1wp3dg5">
+                <div class="css-ahi0zd">
+                  <span class="css-afrhei">About</span>
+                  <div class="css-1mh49xg">
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://help.onekey.so/hc/articles/10081334240271"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       The Company
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
-                      href="https://status.onekey.so/status/main"
-                      class="css-j2au10"
+                      href="https://onekeyhq.atlassian.net/wiki/spaces/OC/overview"
+                      class="css-j6mzqe"
                     >
-                      System Status
+                      Career
                     </a>
                     <a
                       target="_blank"
                       rel="noreferrer"
                       href="https://help.onekey.so/hc/articles/360002200956"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Media Kits
                     </a>
@@ -1362,7 +1363,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://help.onekey.so/hc/articles/360002003315"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       Privacy Policy
                     </a>
@@ -1370,54 +1371,54 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://help.onekey.so/hc/articles/360002014776"
-                      class="css-j2au10"
+                      class="css-j6mzqe"
                     >
                       User Agreement
                     </a>
                   </div>
                 </div>
               </div>
-              <style data-emotion="css e88mxi">
-                .css-e88mxi {
+              <style data-emotion="css t8g12d">
+                .css-t8g12d {
                   display: block;
                 }
                 @media (min-width: 414px) {
-                  .css-e88mxi {
+                  .css-t8g12d {
                     display: block;
                   }
                 }
                 @media (min-width: 960px) {
-                  .css-e88mxi {
+                  .css-t8g12d {
                     display: none;
                   }
                 }
                 @media (min-width: 1200px) {
-                  .css-e88mxi {
+                  .css-t8g12d {
                     display: none;
                   }
                 }
                 @media (min-width: 1440px) {
-                  .css-e88mxi {
+                  .css-t8g12d {
                     display: none;
                   }
                 }
                 @media (min-width: 1920px) {
-                  .css-e88mxi {
+                  .css-t8g12d {
                     display: none;
                   }
                 }
               </style>
-              <div class="css-e88mxi">
-                <style data-emotion="css 14ciuie">
-                  .css-14ciuie {
+              <div class="css-t8g12d">
+                <style data-emotion="css 1mtvbks">
+                  .css-1mtvbks {
                     padding-top: 20px;
                     padding-bottom: 80px;
                     max-width: 480px;
                   }
                 </style>
-                <div class="css-14ciuie">
-                  <style data-emotion="css fluji0">
-                    .css-fluji0 {
+                <div class="css-1mtvbks">
+                  <style data-emotion="css 1890woz">
+                    .css-1890woz {
                       -webkit-box-pack: justify;
                       -webkit-justify-content: space-between;
                       justify-content: space-between;
@@ -1427,13 +1428,13 @@ document
                       display: flex;
                     }
                   </style>
-                  <div class="css-fluji0">
-                    <div class="css-1gm3yof">
+                  <div class="css-1890woz">
+                    <div class="css-1sqqwpe">
                       <a
                         target="_blank"
                         rel="noreferrer"
                         href="https://twitter.com/OneKeyHQ"
-                        class="css-1pimxyo"
+                        class="css-1cmwfgr"
                       >
                         <svg
                           viewBox="0 0 32 32"
@@ -1452,7 +1453,7 @@ document
                         target="_blank"
                         rel="noreferrer"
                         href="https://github.com/OneKeyHQ/"
-                        class="css-1pimxyo"
+                        class="css-1cmwfgr"
                       >
                         <svg
                           viewBox="0 0 32 32"
@@ -1471,7 +1472,7 @@ document
                         target="_blank"
                         rel="noreferrer"
                         href="https://blog.onekey.so"
-                        class="css-1pimxyo"
+                        class="css-1cmwfgr"
                       >
                         <svg
                           viewBox="0 0 1043.63 592.71"
@@ -1493,7 +1494,7 @@ document
                       target="_blank"
                       rel="noreferrer"
                       href="https://github.com/OneKeyHQ"
-                      class="css-foz0ft"
+                      class="css-nqgj01"
                     >
                       <svg
                         width="87"
@@ -1517,13 +1518,13 @@ document
                       </svg>
                     </a>
                   </div>
-                  <style data-emotion="css m66jbj">
-                    .css-m66jbj {
+                  <style data-emotion="css 1fjmjyl">
+                    .css-1fjmjyl {
                       padding-top: 8px;
                     }
                   </style>
-                  <div class="css-m66jbj">
-                    <span class="css-10mmgor">
+                  <div class="css-1fjmjyl">
+                    <span class="css-1c1dj2u">
                       Since 2019 to Now ｜ OneKey Limited All Rights Reserved
                     </span>
                   </div>
