@@ -5,7 +5,7 @@
     "build": "browserify nano-util.js > /tmp/nano-util.js"
   },
   "dependencies": {
-    "nanocurrency-web": "^1.2.2"
+    "nanocurrency-web": "^1.4.3"
   },
   "devDependencies": {
     "browserify": "^16.2.3",
