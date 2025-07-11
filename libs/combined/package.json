@@ -27,7 +27,7 @@
     "kjua": "0.6.0",
     "nanocurrency-web": "^1.2.2",
     "nebulas": "0.5.6",
-    "stellar-base": "^0.10.0",
+    "stellar-base": "^0.13.2",
     "unorm": "1.6.0",
     "zxcvbn": "4.4.2"
   },
