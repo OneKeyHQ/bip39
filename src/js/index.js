@@ -1434,7 +1434,12 @@
                     pubkey = CosmosBufferToPublic(keyPair.getPublicKeyBuffer(), hrp);
                     privkey = keyPair.d.toBuffer().toString("hex");
                 }
-              
+                if (networks[DOM.network.val()].name == "LUNC - Terra Classic") {
+                    const hrp = "terra";
+                    address = CosmosBufferToAddress(keyPair.getPublicKeyBuffer(), hrp);
+                    pubkey = CosmosBufferToPublic(keyPair.getPublicKeyBuffer(), hrp);
+                    privkey = keyPair.d.toBuffer().toString("hex");
+                }              
                 if (networks[DOM.network.val()].name == "RUNE - THORChain") {
                      const hrp = "thor";
                      address = CosmosBufferToAddress(keyPair.getPublicKeyBuffer(), hrp);
@@ -3688,6 +3693,13 @@
                 setHdCoin(559);
             },
         }
+        {
+            name: "LUNC - Terra Classic",
+            onSelect: function() {
+                network = libs.bitcoin.networks.bitcoin;
+                setHdCoin(118);
+            },
+        },
     ]
 
     var clients = [
