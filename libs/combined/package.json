@@ -18,7 +18,7 @@
     "create-hash": "^1.2.0",
     "ed25519-hd-key": "^1.0.0",
     "elastos-wallet-js": "git://github.com/johnnynanjiang/Elastos.SDK.Keypair.Javascript.git#491dc51b64efaf0a8aae62028b68e2c8e38fde06",
-    "ethereumjs-util": "6.2.1",
+    "ethereumjs-util": "7.0.2",
     "fast-levenshtein": "2.0.6",
     "groestlcoinjs-lib": "git://github.com/Groestlcoin/groestlcoinjs-lib.git#3.3.2",
     "handshake-util": "1.2.0",
