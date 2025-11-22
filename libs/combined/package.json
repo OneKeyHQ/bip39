@@ -5,7 +5,7 @@
     "build": "browserify index.js --standalone libs | uglifyjs -c > ../../src/js/bip39-libs.js"
   },
   "dependencies": {
-    "base-x": "3.0.7",
+    "base-x": "3.0.11",
     "bchaddrjs": "0.4.4",
     "bchaddrjs-slp": "git://github.com/simpleledger/bchaddrjs.git#af16e44a6bfbe4b3980a62dba50e2f68ed864c6b",
     "bech32": "1.1.4",
