@@ -104,13 +104,13 @@
   },
   "homepage": "https://github.com/ethereumjs/ethereumjs-util",
   "dependencies": {
-    "bn.js": "^4.11.0",
+    "bn.js": "^5.2.3",
     "create-hash": "^1.1.2",
     "ethjs-util": "^0.1.6",
     "keccak": "^1.0.2",
     "rlp": "^2.0.0",
     "safe-buffer": "^5.1.1",
-    "secp256k1": "^3.0.1"
+    "secp256k1": "^4.0.0"
   },
   "devDependencies": {},
   "standard": {
